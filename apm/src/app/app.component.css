@@ -1,0 +1,14 @@
+h1:hover{
+    background-color: fuchsia;
+    color: white;
+}
+
+.hoover:active{
+    background-color: blue;
+    color:white;
+}
+
+.hoover:focus{
+    background-color: red;
+    color: green;
+}
