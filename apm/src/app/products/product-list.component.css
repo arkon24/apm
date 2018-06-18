@@ -1,0 +1,14 @@
+input:active{
+    background-color: yellow;
+    color: black;
+}
+
+input:focus{
+    background-color: yellow;
+    color: black; 
+}
+
+.tableMargin{
+    margin:10px;
+    
+}

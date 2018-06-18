@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pageTitle = 'Angular: Getting Started';
+  pageTitle = '売買市場';
+
+  getTitle = () => this.pageTitle;
+
 }
+
+
