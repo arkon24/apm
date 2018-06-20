@@ -13,8 +13,8 @@ export class ProductListComponent implements OnInit{
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
-    //listFilter: string ='cart';
-
+    
+    filteredProducts: IProduct[];
     _listFilter: string;
 
     get listFilter(): string{
@@ -26,7 +26,6 @@ export class ProductListComponent implements OnInit{
         this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
     }
 
-    filteredProducts: IProduct[];
     products: IProduct[] = [
         {
             "productId": 1,
@@ -83,6 +82,10 @@ export class ProductListComponent implements OnInit{
     constructor() {
         this.filteredProducts = this.products;
         this.listFilter = 'cart';
+    }
+
+    onRatingClicked(message: string): void{
+        this.pageTitle = 'Product List: ' + message;
     }
 
     performFilter(filterBy: string): IProduct[]{
