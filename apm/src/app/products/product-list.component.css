@@ -12,3 +12,17 @@ input:focus{
     margin:10px;
     
 }
+
+thead{
+    color: #337AB7;
+}
+
+.highlight-Table:hover{
+    background-color: black;
+    color: white;
+}
+
+.highlight-Table:active{
+    background-color: yellow;
+    color: black;
+}
